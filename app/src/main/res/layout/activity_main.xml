@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/kk"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:backgroundTint="#000000"
+    tools:context=".MainActivity">
+
+
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="411dp"
+        android:layout_height="525dp"
+        android:layout_marginBottom="104dp"
+        android:background="#C58A8A"
+        android:backgroundTint="#C58A8A"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <CheckBox
+                android:id="@+id/A"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:onClick="onCheckBoxClicked"
+                android:text="Acorn (10 cal)"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#703C4E"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/B"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:onClick="onCheckBoxClicked"
+                android:text="Ice Cream (100 cal)"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#703C4E"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/C"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:onClick="onCheckBoxClicked"
+                android:text="Orange Chicken (200 cal)"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#703C4E"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/D"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:onClick="onCheckBoxClicked"
+                android:text="Subway (300 cal)"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#703C4E"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/E"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:onClick="onCheckBoxClicked"
+                android:text="Ramen (400 cal)"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#703C4E"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/F"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:onClick="onCheckBoxClicked"
+                android:text="Don buri (500 cal)"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#703C4E"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/G"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:onClick="onCheckBoxClicked"
+                android:text="Water ( 0 cal)"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#703C4E"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/H"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:onClick="onCheckBoxClicked"
+                android:text="Horse (700 Cal)"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#703C4E"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/I"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:onClick="onCheckBoxClicked"
+                android:text="Canes (800 cal)"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#703C4E"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/J"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:onClick="onCheckBoxClicked"
+                android:text="Monster (10 cal)"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#703C4E"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/total"
+        android:layout_width="336dp"
+        android:layout_height="100dp"
+        android:background="#C58A8A"
+        android:backgroundTint="#C58A8A"
+        android:gravity="center"
+        android:hint="Total"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/minus"
+        android:layout_width="82dp"
+        android:layout_height="82dp"
+        android:layout_marginTop="636dp"
+        android:layout_marginEnd="128dp"
+        android:backgroundTint="#70ACC6"
+        android:text="-"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/plus"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="636dp"
+        android:backgroundTint="#70ACC6"
+        android:fadeScrollbars="true"
+        android:gravity="center"
+        android:text="+"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/clear"
+        android:layout_width="79dp"
+        android:layout_height="102dp"
+        android:layout_marginStart="336dp"
+        android:backgroundTint="#988F8D"
+        android:gravity="center"
+        android:text="Clear"
+        android:textSize="8sp"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <Button
+        android:id="@+id/enter"
+        android:layout_width="82dp"
+        android:layout_height="82dp"
+        android:layout_marginTop="636dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#988F8D"
+        android:gravity="center"
+        android:text="Enter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/quantity"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="636dp"
+        android:gravity="center"
+        android:hint="Quantity"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.329"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
